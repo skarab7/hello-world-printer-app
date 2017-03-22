@@ -1,7 +1,8 @@
 Simple Flask App
 ================
 
-Aplikacja wyświetlająca imię i wiadomość w różnych formatach.
+Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć 
+o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Rozpocząnając pracę z projektem:
 
@@ -21,6 +22,7 @@ Aplikacja wyświetlająca imię i wiadomość w różnych formatach.
 
   :: 
 
+  	# jako zwykły program
     python main.py
 
     # albo:
@@ -30,7 +32,7 @@ Aplikacja wyświetlająca imię i wiadomość w różnych formatach.
 
   ::
 
-    ...
+    PYTHONPATH=. pytest
 
 - Integracja z TravisCI:
 
