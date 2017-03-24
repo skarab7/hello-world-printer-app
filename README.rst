@@ -32,9 +32,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   ::
 
-    PYTHONPATH=. pytest
+    PYTHONPATH=. py.test
     # see: http://doc.pytest.org/en/latest/capture.html
-    PYTHONPATH=. pytest  --verbose -s
+    PYTHONPATH=. py.test  --verbose -s
 
 - Integracja z TravisCI:
 
