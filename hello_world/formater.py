@@ -4,7 +4,7 @@ PLAIN_UP = "plain_uppercase"
 PLAIN_LO = "plain_lowercase"
 JSON = "json"
 
-SUPPORTED = [PLAIN, PLAIN_UP, PLAIN_LO, PLAIN_LO]
+SUPPORTED = [PLAIN, PLAIN_UP, PLAIN_LO, JSON]
 
 
 def get_formatted(msg, imie, format):
