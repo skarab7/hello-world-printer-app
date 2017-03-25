@@ -12,7 +12,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     pip install -r requirements.txt
     pip install -r test_requirements
 
-
 - Uruchamianie applikacji:
 
   :: 
@@ -23,16 +22,15 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     # albo:
     PYTHONPATH=. FLASK_APP=hello_world flask run
 
-- Uruchamianie testów:
+- Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
 
   ::
 
     PYTHONPATH=. py.test
-    # see: http://doc.pytest.org/en/latest/capture.html
     PYTHONPATH=. py.test  --verbose -s
 
 
-- Kontynuując pracę z projektem:
+- Kontynuując pracę z projektem, aktywowanie hermetycznego środowiska dla aplikacji py:
 
   ::
 
