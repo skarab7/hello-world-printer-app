@@ -4,7 +4,7 @@ Simple Flask App
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć 
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
-- Rozpocząnając pracę z projektem:
+- Rozpocząnając pracę z projektem (wykorzystując virtualenv). Hermetyczne środowisko dla pojedyńczej aplikacji w python-ie:
 
   ::
 
@@ -12,11 +12,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     pip install -r requirements.txt
     pip install -r test_requirements
 
-- Kontynuując pracę z projektem:
-
-  ::
-
-    workon wsb-simple-flask-app
 
 - Uruchamianie applikacji:
 
@@ -36,11 +31,54 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     # see: http://doc.pytest.org/en/latest/capture.html
     PYTHONPATH=. py.test  --verbose -s
 
+
+- Kontynuując pracę z projektem:
+
+  ::
+
+    source /usr/bin/virtualenvwrapper.sh
+    workon wsb-simple-flask-app
+
+
 - Integracja z TravisCI:
 
   ::
 
     ...
+
+
+Pomocnicze
+==========
+
+- Instalacja python virtualenv i virtualenvwrapper:
+
+  ::
+
+    yum install python-pip
+    pip install virtualenv
+    pip install virtualenvwrapper
+  
+- Instalacja docker-a:
+
+  :: 
+
+    yum remove docker \
+        docker-common \
+        container-selinux \
+        docker-selinux \
+        docker-engine
+
+    yum install -y yum-utils
+
+    yum-config-manager \
+      --add-repo \
+      https://download.docker.com/linux/centos/docker-ce.repo
+
+    yum makecache fast
+    yum install docker-ce
+    systemctl start docker
+
+
 
 
 Materiały
