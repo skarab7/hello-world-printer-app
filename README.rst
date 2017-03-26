@@ -8,6 +8,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
   ::
 
+    source /usr/bin/virtualenvwrapper.sh
     mkvirtualenv wsb-simple-flask-app
     pip install -r requirements.txt
     pip install -r test_requirements
